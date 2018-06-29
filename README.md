@@ -1,26 +1,39 @@
 # poei-dealabs
-## UML diagrams
+# DealLabs Project
 
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+Dans le cadre de ma formation chez **Aston**, il nous a été demandé de réaliser sur *electron* une application capable d'afficher les dernier produit posté sur [deallabs](https://www.dealabs.com/).
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+# Utilisation
 
-And this will produce a flow chart:
+Afin de pouvoir lancer le projet il vous suffit de télécharger ce git sur votre machine.
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+## Dépendance
+
+ - [Bootstrap 4+](https://getbootstrap.com/)
+ - [npm](https://www.npmjs.com/)
+ - [Electron](https://electronjs.org/)
+ - [Electron-reload](https://www.npmjs.com/package/electron-reload)
+ - [jquery](https://github.com/kywan/poei-dealabs/blob/master/js/jquery-3.3.1.min.js)
+
+## Installation
+
+Une fois le projet et ses dépendance téléchargé et installé utiliser la commande
+`npm install`
+
+## Lancement
+
+Pour lancer le projet utilisez simplement `npm start`
+
+# Fonctionnalités
+
+ - [x] Affichage des dernier produit
+ - [x] Affichage en [Masonry](https://masonry.desandro.com/)
+ - [x] [Image par défaut](https://github.com/kywan/poei-dealabs/blob/master/img/no-image.png) si pas d'image disponible
+ - [x] Gestion des 'fakes' data
+ - [x] Project responsive
+ - [x] Code **ULTRA** commenté (pour ton plus grand bonheur) 
+ - [x] Ajout du 'il y a X minutes'
+
+# Bug connus
+En cas d'une entré html pas cool dans la description certain des block peuvent ne pas avoir l'apparence voulus
