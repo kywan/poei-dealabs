@@ -47,7 +47,8 @@ while (item[i]) {
         vendeur_price += price;
     }
     var img = item[i].childNodes[2].getAttribute('url');
-
+    if (img == null)
+        img = "./img/no-image.png";
     const regex_img = /<img.*>/gm;
     const regex_title = /<strong>.*<\/strong>/gm
     let m;
