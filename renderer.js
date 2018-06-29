@@ -36,6 +36,7 @@ console.log(item[0]);
 var i = 0;
 while (item[i]) {
     var title = item[i].childNodes[3].textContent;
+    if (title.length > 100) title = title.substring(0,100) + '...';
     var vendeur_price = item[i].childNodes[1].getAttribute('name');
     if (vendeur_price == null)
         vendeur_price = '';
@@ -51,7 +52,7 @@ while (item[i]) {
     const regex_title = /<strong>.*<\/strong>/gm
     let m;
     var description = item[i].childNodes[4].textContent;
-
+    if (description.length > 500) description = description.substring(0,500) + '...';
     while ((m = regex_img.exec(description)) !== null)
     {
         // This is necessary to avoid infinite loops with zero-width matches
